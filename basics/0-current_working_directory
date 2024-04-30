@@ -1,3 +1,2 @@
 #!/bin/bash
-#This script prints your current directory#
 current_directory=$(pwd)
