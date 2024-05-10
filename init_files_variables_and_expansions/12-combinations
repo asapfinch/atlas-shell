@@ -1,2 +1,2 @@
 #!/bin/bash
-for l1 in {a..z}; do for l2 in {a..z}; do if [ "$l1$l2" != "oo" ]; then echo $l1$l2; fi; done; done
+echo {{a..z}}{{a..z}} | grep -v oo
