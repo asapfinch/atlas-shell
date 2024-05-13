@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
-# This script displays the contents of the current directory #
+# This script displays parts of filenames after the first dash in the current directory, excluding hidden files.
 for file in *-*; do
-	echo "${file#*-}"
+  # Check if the file name contains a dash and is not hidden
+  if [[ "$file" == *-* ]] && [[ "$file" != .* ]]; then
+    # Display the part of the filename after the first dash
+    echo "${file#*-}"
+  fi
 done
