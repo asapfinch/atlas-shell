@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# This script displays the time #
+
+hour=0
+while [ $hour -le 12 ]; do
+	mine=1
+	while [ $minute -le 59 ]; do
+		echo "$hour hour(s) and $minute minute(s)"
+		minute=$((minute + 1))
+	done
+	hour=$((hour + 1))
+done | head -n 70
